@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Skills </h1>
+        <nav>
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./skills.html">Contact</a>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;">60%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;">45%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <span>PHP & MySQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;">30%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <span>UI Design</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;">65%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <span>Graphic Design</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Multimedia</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
+
+<style>
+/* General Styles */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f3c6c6, #e8a0bf, #f65d5d);
+    color: #3e3e3e;
+}
+
+/* Header & Navigation */
+header {
+    color: white;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: "Georgia", serif;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fdd8d8; /* Soft pastel pink */
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+.about-container {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border: 3px solid gold;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 3px solid gold; /* Gold border for elegance */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #d49866;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Georgia", serif;
+}
+
+p {
+    font-size: 22px;
+    color: #fefefe;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 15px;
+    border-left: 5px solid gold;
+    padding-left: 10px;
+    font-family: "Garamond", serif;
+    font-weight: bold   ;
+}
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f3c6c6, #e8a0bf, #f65d5d);
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid gold;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill span {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Georgia", serif;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Animation on Page Load */
+.progress-bar .progress {
+    animation: fillProgress 2s forwards;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+}
+
+</style>
